@@ -5,6 +5,18 @@
 # Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
 
 
+# Though process
+
+# When I look at the array I look for the smallest possible value
+# and then I look for the next smallest value that is not in the same column in a preceding or following row.
+# At each step we seach the rows above and below the last row recursively
+
+
+# note: Numpy is not necessary but just helps lean up the code rather than implement such functions ourselves. 
+# some optimizing in time complexity could possible be achieve by writing everything custom. 
+# The goal is a correct algorithm and understanding the complexities
+
+
 import numpy as np
 from collections import defaultdict
 def sol(a):

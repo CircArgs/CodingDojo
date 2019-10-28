@@ -16,6 +16,10 @@
 # some optimizing in time complexity could possible be achieve by writing everything custom. 
 # The goal is a correct algorithm and understanding the complexities
 
+# complexities:
+# if the array of costs is of size n then
+# time complexity is O(nlog(n)) since we recursively split the array in two each time.
+# space complexity is O(n) since we edit the array in place we incur nothing there. we gain space from our hashtable (dictionary) that stores our selected values
 
 import numpy as np
 from collections import defaultdict
